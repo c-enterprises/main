@@ -1,0 +1,26 @@
+ul.menubar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.menubar li {float: left;}
+
+ul.menubar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li:hover {
+background-color: #cc3300;
+
+
+
+@media screen and (max-width: 600px) {
+  ul.manubar li.right, 
+  ul.menubar li {float: none;}
+}
