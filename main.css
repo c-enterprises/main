@@ -1,4 +1,4 @@
-ul.menubar {
+ul . {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,9 +6,9 @@ ul.menubar {
   background-color: #333;
 }
 
-ul.menubar li {float: left;}
+ul li {float: left;}
 
-ul.menubar li a {
+ul li a {
   display: block;
   color: white;
   text-align: center;
