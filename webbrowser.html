@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input {
+            width: 90%;
+            height: 20px;
+            outline: none;
+        }
+        a {
+            background-color: rgb(107, 107, 214);
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        embed {
+            width: 100%;
+            height: 100vh;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webrowser</title>
+</head>
+<body>
+    <input type="url" id="input" placeholder="type a url..."><a id="button">Go</a>
+    <embed src="https://bing.com" type="text/html" id="web">
+    <script>
+        var btn = document.querySelector("a");
+        var inp = document.querySelector("input");
+        var web = document.querySelector("#web");
+
+        btn.addEventListener("click", () => {
+            web.src = inp.value;
+        })
+    </script>
+</body>
+</html>
