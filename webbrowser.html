@@ -44,6 +44,11 @@
         
           
         }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
   
     </style>
     <meta charset="UTF-8">
@@ -54,21 +59,23 @@
     <div class="searchHolder">
     <input type="text" name="search" placeholder="search...">
     </div>
+    <iframe src="/shortcuts.html" frameborder="0"></iframe>
 
     <script>
         var input = document.querySelector("input");
+        var content = document.querySelector("iframe");
         input.addEventListener("keyup", function(event) {
             if (event.keyCode === 13) {
                 if(input.value.includes("https://") || input.value.includes("http://")){
-                    window.location.href=input.value;
+                   content.src=input.value;
                 }
                 else if(input.value.includes(".")){
-                    window.location.href="http://"+input.value;
+                   content.src="http://"+input.value;
 
                 }
                 
                 else{
-                    window.location.href="https://www.google.com/search?q="+input.value;
+                   content.src="https://www.google.com/search?q="+input.value;
                 }
 
 
