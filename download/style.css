@@ -1,0 +1,28 @@
+*{
+    background-color: #797979;
+}
+
+h1{
+    color:white;
+    font-family: Arial;
+    text-align: center;
+    
+
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    border-color:white;
+    border-width: 1px;
+    border-style: solid;
+    width: 99%;
+    position: absolute;
+}
+p{
+    color:white;
+    font-family: Arial;
+    
+}

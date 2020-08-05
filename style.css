@@ -116,3 +116,15 @@ ul.menubar {
     }
 }
 
+div a.project{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    border-color:white;
+    border-width: 1px;
+    border-style: solid;
+    width: 99%;
+    position: absolute;
+}
+
